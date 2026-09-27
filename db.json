@@ -1,0 +1,63 @@
+{
+  "drivers": [
+    { "id": 1, "name": "Максим Ковальчук", "email": "m.koval@speed.ua", "licenseCategory": "B, C", "status": "active" },
+    { "id": 2, "name": "Ольга Бондаренко", "email": "o.bondarenko@fleet.com", "licenseCategory": "B", "status": "active" },
+    { "id": 3, "name": "Андрій Кравченко", "email": "a.kravchenko@transport.org", "licenseCategory": "B, CE", "status": "on_leave" }
+  ],
+  "vehicles": [
+    { "id": 101, "brand": "BMW", "model": "M3", "plate": "BX1234AB", "year": 2021, "type": "Sedan" },
+    { "id": 102, "brand": "Hyundai", "model": "Coupe", "plate": "BX5678CE", "year": 2008, "type": "Coupe" },
+    { "id": 103, "brand": "Alfa Romeo", "model": "Giulia", "plate": "BX9012EX", "year": 2020, "type": "Sedan" }
+  ],
+  "trips": [
+    {
+      "id": 1,
+      "driverId": 1,
+      "vehicleId": 101,
+      "origin": "Київ",
+      "destination": "Хмельницький",
+      "distanceKm": 340,
+      "status": "completed",
+      "departureTime": "2026-09-20T08:00:00Z",
+      "arrivalTime": "2026-09-20T12:30:00Z"
+    },
+    {
+      "id": 2,
+      "driverId": 2,
+      "vehicleId": 103,
+      "origin": "Львів",
+      "destination": "Київ",
+      "distanceKm": 540,
+      "status": "in_progress",
+      "departureTime": "2026-09-27T10:15:00Z",
+      "arrivalTime": null
+    },
+    {
+      "id": 3,
+      "driverId": 1,
+      "vehicleId": 102,
+      "origin": "Хмельницький",
+      "destination": "Вінниця",
+      "distanceKm": 120,
+      "status": "scheduled",
+      "departureTime": "2026-09-28T09:00:00Z",
+      "arrivalTime": null
+    }
+  ],
+  "maintenanceLogs": [
+    {
+      "id": 1,
+      "vehicleId": 102,
+      "serviceType": "Заміна мастила та фільтрів",
+      "costUah": 3200,
+      "date": "2026-08-15"
+    },
+    {
+      "id": 2,
+      "vehicleId": 101,
+      "serviceType": "Діагностика підвіски",
+      "costUah": 1800,
+      "date": "2026-09-02"
+    }
+  ]
+}
